@@ -5554,7 +5554,7 @@ Mors</description>
 <instance part="P+3" gate="VCC" x="78.74" y="60.96" rot="R270"/>
 <instance part="R4" gate="G$1" x="-48.26" y="96.52" rot="R90"/>
 <instance part="GND5" gate="1" x="78.74" y="71.12" rot="R90"/>
-<instance part="BAT" gate="-1" x="99.06" y="104.14" rot="R90"/>
+<instance part="BAT" gate="-1" x="83.82" y="91.44" rot="R270"/>
 <instance part="BAT" gate="-2" x="93.98" y="109.22" rot="R270"/>
 <instance part="VDD1" gate="G$1" x="81.28" y="76.2" rot="R270"/>
 <instance part="VDD2" gate="G$1" x="93.98" y="114.3"/>
@@ -5682,21 +5682,19 @@ Mors</description>
 <wire x1="78.74" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="BAT" gate="-2" pin="S"/>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
+<pinref part="BAT" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="N$5" class="1">
 <segment>
-<pinref part="BAT" gate="-1" pin="S"/>
-<wire x1="99.06" y1="101.6" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="91.44" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="91.44" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="S2" gate="1" pin="2"/>
+<wire x1="83.82" y1="93.98" x2="83.82" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="119.38" x2="73.66" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="119.38" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="71.12" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
-<junction x="99.06" y="91.44"/>
+<pinref part="BAT" gate="-1" pin="S"/>
+<junction x="83.82" y="93.98"/>
 </segment>
 </net>
 </nets>
